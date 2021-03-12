@@ -89,7 +89,7 @@ class CoOccurrenceNetwork:
                             alpha=0.7,
                             node_size=[60000*v for v in pr.values()])
 
-        nx.draw_networkx_labels(graph, pos, fontsize=14, font_family='sans-serif', font_weight="bold")
+        nx.draw_networkx_labels(graph, pos, font_family='sans-serif', font_weight="bold")
 
         edge_width = [d["weight"] * 10 for (u, v, d) in graph.edges(data=True)]
         nx.draw_networkx_edges(graph, pos, alpha=0.4, edge_color="darkgrey", width=edge_width)
