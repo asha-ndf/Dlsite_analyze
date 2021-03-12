@@ -2,9 +2,9 @@ from Controller.Crawler.crawler import Crawler
 
 class AllDlsiteCrawler(Crawler):
     def run(self):
-        url_100 = "https://www.dlsite.com/maniax/ranking/total?category=comic"
-        url_200 = "https://www.dlsite.com/maniax/ranking/total?category=comic&page=2"
-        url_300 = "https://www.dlsite.com/maniax/ranking/total?category=comic&page=3"
+        url_100 = "https://www.dlsite.com/maniax/ranking/total?category=voice"
+        url_200 = "https://www.dlsite.com/maniax/ranking/total?category=voice&page=2"
+        url_300 = "https://www.dlsite.com/maniax/ranking/total?category=voice&page=3"
         tags_1_100 = self._run(url_100)
         tags_101_200 = self._run(url_200)
         tags_201_300 = self._run(url_300)
@@ -25,9 +25,9 @@ class AllDlsiteCrawler(Crawler):
 
 class MonthDlsiteCrawler(Crawler):
     def run(self):
-        url_100 = "https://www.dlsite.com/maniax/ranking/month?category=comic"
-        url_200 = "https://www.dlsite.com/maniax/ranking/month?category=comic&page=2"
-        url_300 = "https://www.dlsite.com/maniax/ranking/month?category=comic&page=3"
+        url_100 = "https://www.dlsite.com/maniax/ranking/month?category=voice"
+        url_200 = "https://www.dlsite.com/maniax/ranking/month?category=voice&page=2"
+        url_300 = "https://www.dlsite.com/maniax/ranking/month?category=voice&page=3"
         tags_1_100 = self._run(url_100)
         tags_101_200 = self._run(url_200)
         tags_201_300 = self._run(url_300)
